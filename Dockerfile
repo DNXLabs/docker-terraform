@@ -1,6 +1,6 @@
 FROM alpine:3.7
 
-ENV TERRAFORM_VERSION=0.11.7
+ENV TERRAFORM_VERSION=0.12.0-beta1
 
 VOLUME ["/data"]
 
@@ -15,4 +15,6 @@ RUN apk update && \
     rm -rf /var/cache/apk/* && \
     rm -rf /var/tmp/* 
 
+ENTRYPOINT [ "terraform" ]
 
+CMD [ "version" ]
