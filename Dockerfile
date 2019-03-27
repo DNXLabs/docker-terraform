@@ -1,10 +1,10 @@
 FROM alpine:3.7
 
-ENV TERRAFORM_VERSION=0.12.0-beta1
+ENV TERRAFORM_VERSION=0.11.13
 
-VOLUME ["/data"]
+VOLUME ["/work"]
 
-WORKDIR /data
+WORKDIR /work
 
 RUN apk update && \
     apk add bash ca-certificates git openssl unzip wget make && \
