@@ -2,7 +2,7 @@ FROM golang:1.12-alpine AS terraform-provider-aws
 
 RUN apk add --update git bash openssh curl make bzr
 
-ENV TERRAFORM_PROVIDER_VERSION=2.27.0
+ENV TERRAFORM_PROVIDER_VERSION=2.41.0
 
 ENV GOPROXY=https://gocenter.io
 
@@ -14,14 +14,14 @@ WORKDIR /development/terraform-providers/terraform-provider-aws
 
 RUN git checkout v${TERRAFORM_PROVIDER_VERSION}
 
-RUN curl https://patch-diff.githubusercontent.com/raw/terraform-providers/terraform-provider-aws/pull/8652.patch | git apply -v
+RUN curl https://patch-diff.githubusercontent.com/raw/terraform-providers/terraform-provider-aws/pull/8268.patch | git apply -v
 
 RUN make tools build
 
 
 FROM alpine:3.7
 
-ENV TERRAFORM_PROVIDER_PATCHED_VERSION=2.27.0-dnx-ecs1
+ENV TERRAFORM_PROVIDER_PATCHED_VERSION=2.41.0-dnx-alb1
 
 ENV TERRAFORM_VERSION=0.12.6
 ENV AWSCLI_VERSION=1.16.169
