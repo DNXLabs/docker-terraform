@@ -1,6 +1,6 @@
 # docker-terraform
 
-![Security Scan](https://github.com/DNXLabs/docker-terraform/workflows/Security%20Scan/badge.svg)
+![Security Scan](https://github.com/DNXLabs/docker-terraform/workflows/Security/badge.svg)
 ![Lint](https://github.com/DNXLabs/docker-terraform/workflows/Lint/badge.svg)
 
 
