@@ -1,6 +1,6 @@
 FROM alpine:3.7
 
-ENV TERRAFORM_VERSION=0.12.20
+ENV TERRAFORM_VERSION=0.12.23
 ENV AWSCLI_VERSION=1.17.14
 
 VOLUME ["/work"]
@@ -33,8 +33,8 @@ RUN apk --no-cache add \
         zip=3.0-r4 && \
     pip --no-cache-dir install awscli==$AWSCLI_VERSION && \
     update-ca-certificates && \
-    rm -rf /var/tmp/ && \ 
-    rm -rf /tmp/* && \ 
+    rm -rf /var/tmp/ && \
+    rm -rf /tmp/* && \
     rm -rf /var/cache/apk/*
 
 COPY scripts /opt/scripts
