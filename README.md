@@ -1,5 +1,9 @@
 # docker-terraform
 
+Docker image containing Terraform, AWS CLI and AWS Shell, to deploy infrastructure as code on AWS
+
+
+
 ![Security Scan](https://github.com/DNXLabs/docker-terraform/workflows/Security/badge.svg)
 ![Lint](https://github.com/DNXLabs/docker-terraform/workflows/Lint/badge.svg)
 
