@@ -25,7 +25,9 @@ docker run docker-terraform <command>
 ```
 
 ## Author
-App managed by DNX Solutions.
+
+Managed by [DNX Solutions](https://github.com/DNXLabs).
 
 ## License
-Apache 2 Licensed. See LICENSE for full details.
+
+Apache 2 Licensed. See [LICENSE](https://github.com/DNXLabs/docker-terraform/blob/master/LICENSE) for full details.
