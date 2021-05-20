@@ -1,4 +1,4 @@
-name: Cron GitHub Pages
+name: Cron Bump Terraform Version
 
 on:
   workflow_dispatch:
