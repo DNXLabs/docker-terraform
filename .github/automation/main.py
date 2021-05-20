@@ -78,9 +78,7 @@ print('Pushed commit {} to {} branch:\n    {}'.format(
 data = {
     'name': '%s-dnx1' % tag_name_tf,
     'tag_name': tag_name_tf,
-    'body': '- Bump Terraform version to v%s.' % tag_name_tf,
-    'draft': True,
-    'prerelease': True
+    'body': '- Bump Terraform version to v%s.' % tag_name_tf
 }
 
 headers = {
