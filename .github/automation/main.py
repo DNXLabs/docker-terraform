@@ -9,7 +9,7 @@ from jinja2 import Environment, FileSystemLoader
 LATEST_RELEASES_PATH_TF = 'https://api.github.com/repos/hashicorp/terraform/releases/latest'
 LATEST_RELEASES_PATH_DNX_TF = 'https://api.github.com/repos/DNXLabs/docker-terraform/releases/latest'
 GITHUB_TOKEN = os.getenv('GITHUB_TOKEN')
-GITHUB_REPOSITORY_ID = os.getenv('GITHUB_REPOSITORY_ID', '143522585')
+GITHUB_REPOSITORY_ID = '143522585'
 DEFAULT_BRANCH = os.getenv('DEFAULT_BRANCH', 'master')
 
 
