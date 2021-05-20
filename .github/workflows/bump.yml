@@ -1,10 +1,9 @@
 name: Cron Bump Terraform Version
 
 on:
-  workflow_dispatch:
-  # schedule:
-  #   # * is a special character in YAML so you have to quote this string
-  #   - cron: '0 0 * * 1'
+  schedule:
+    # * is a special character in YAML so you have to quote this string
+    - cron: '0 0 * * 1'
 
 jobs:
   build:
