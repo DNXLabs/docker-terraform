@@ -24,4 +24,3 @@ jobs:
         python main.py
       env:
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-        GITHUB_REPOSITORY_ID: ${{secrets.GITHUB_REPOSITORY_ID}}
