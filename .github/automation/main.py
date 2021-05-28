@@ -77,7 +77,7 @@ print('Pushed commit {} to {} branch:\n    {}'.format(
 #Create new release
 data = {
     'name': '%s-dnx1' % tag_name_tf,
-    'tag_name': tag_name_tf,
+    'tag_name': '%s-dnx1' % tag_name_tf,
     'body': '- Bump Terraform version to v%s.' % tag_name_tf
 }
 
