@@ -14,6 +14,7 @@ RUN apk --no-cache update && \
         ca-certificates \
         git \
         openssl \
+        openssh \
         unzip \
         zip \
         wget \
