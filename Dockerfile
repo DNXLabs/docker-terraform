@@ -1,6 +1,6 @@
 FROM alpine:3.13
 
-ENV TERRAFORM_VERSION=1.0.3
+ENV TERRAFORM_VERSION=1.0.4
 ENV AWSCLI_VERSION=1.19.73
 
 
@@ -14,7 +14,6 @@ RUN apk --no-cache update && \
         ca-certificates \
         git \
         openssl \
-        openssh \
         unzip \
         zip \
         wget \
