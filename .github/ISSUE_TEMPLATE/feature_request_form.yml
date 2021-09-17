@@ -1,6 +1,5 @@
 name: Feature Request
 description: Suggest an idea for this project
-title: "[Feature-Request]: "
 labels: ["feature-request"]
 body:
   - type: markdown
@@ -33,7 +32,7 @@ body:
     id: alternatives
     attributes:
       label: Alternatives
-      description: Describe the alternatives you've considered
+      description: Describe the alternatives you've considered.
     validations:
       required: false
   - type: textarea
@@ -44,7 +43,7 @@ body:
     id: terms
     attributes:
       label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](../../CODE_OF_CONDUCT.md)
+      description: By submitting this issue, you agree to follow our [Code of Conduct](../blob/master/CODE_OF_CONDUCT.md)
       options:
         - label: I agree to follow this project's Code of Conduct
           required: true

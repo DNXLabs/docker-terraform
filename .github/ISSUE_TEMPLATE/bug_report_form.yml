@@ -1,6 +1,5 @@
 name: Bug Report
 description: File a bug report
-title: "[Bug]: "
 labels: ["bug"]
 body:
   - type: markdown
@@ -38,7 +37,7 @@ body:
     id: expected-behavior
     attributes:
       label: Expected behavior
-      description: Describe the expected behavior
+      description: Describe the expected behavior.
       placeholder: The expected behavior is ...
     validations:
       required: false
@@ -46,7 +45,7 @@ body:
     id: actual-behavior
     attributes:
       label: Actual behavior
-      description: Describe the actual behavior
+      description: Describe the actual behavior.
       placeholder: The actual behavior is ...
     validations:
       required: true
@@ -71,7 +70,7 @@ body:
     id: terms
     attributes:
       label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](./CODE_OF_CONDUCT.md)
+      description: By submitting this issue, you agree to follow our [Code of Conduct](../blob/master/CODE_OF_CONDUCT.md)
       options:
         - label: I agree to follow this project's Code of Conduct
           required: true

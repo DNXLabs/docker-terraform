@@ -27,12 +27,12 @@ Explain the problem and include additional details to help maintainers reproduce
 Provide more context by answering these questions:
 
 * **Did the problem start happening recently** (e.g. after updating to a new version of Terraform) or was this always a problem?
-* If the problem started happening recently, **can you reproduce the problem in an older version of Terraform?** What's the most recent version in which the problem doesn't happen? You can download older versions of Terraform from [the releases page](https://github.com/hashicorp/terraform/releases).
+* If the problem started happening recently, **can you reproduce the problem in an older version of Docker?** What's the most recent version in which the problem doesn't happen? You can download older versions of Docker from [the releases page](https://github.com/docker/docker-ce/releases).
 * **Can you reliably reproduce the issue?** If not, provide details about how often the problem happens and under which conditions it normally happens.
 * If the problem is related to working with files (e.g. opening and editing files), **does the problem happen for all files and projects or only some?** Does the problem happen only when working with local or remote files (e.g. on network drives), with files of a specific type (e.g. only JavaScript or Python files), with large files or files with very long lines, or with files in a specific encoding? Is there anything else special about the files you are using?
 ### Suggesting Enhancements
 
-This section guides you through submitting an enhancement suggestion for DNX modules, including completely new features and minor improvements to existing functionality. Following these guidelines helps maintainers and the community understand your suggestion and find related suggestions.
+This section guides you through submitting an enhancement suggestion for DNX, including completely new features and minor improvements to existing functionality. Following these guidelines helps maintainers and the community understand your suggestion and find related suggestions.
 
 Before creating enhancement suggestions, please check issues as you might find out that you don't need to create one. When you are creating an enhancement suggestion, please include as many details as possible. Fill in the template, including the steps that you imagine you would take if the feature you're requesting existed.
 
