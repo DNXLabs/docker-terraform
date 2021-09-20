@@ -61,7 +61,7 @@ The process described here has several goals:
    Pull Request would represent. The versioning scheme we use is [SemVer](http://semver.org/).
 3. You may merge the Pull Request in once you have the sign-off of two other developers, or if you do not have permission to do that, you may request the second reviewer to merge it for you.
 4. Follow all instructions in [the template](./.github/pull_request_template.md).
-5. Follow the [Good Practices](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/).
+5. Follow the [Good Practices](https://docs.dnx.one/docs/best_practices/docker-best-practices.html).
 6. After you submit your pull request, verify that all [status checks](https://help.github.com/articles/about-status-checks/) are passing. <details><summary>What if the status checks are failing?</summary>If a status check is failing, and you believe that the failure is unrelated to your change, please leave a comment on the pull request explaining why you believe the failure is unrelated. A maintainer will re-run the status check for you. If we conclude that the failure was a false positive, then we will open an issue to track that problem with our status check suite.</details>
 
 While the prerequisites above must be satisfied prior to have your pull request reviewed, the reviewer(s) may ask you to complete additional design work, tests, or other changes before your pull request can be ultimately accepted.
