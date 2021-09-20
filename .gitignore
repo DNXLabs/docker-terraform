@@ -1,2 +1,5 @@
 .github/automation/venv
 .github/automation/Dockerfile
+
+# Macos Desktop Service Store
+.DS_Store
