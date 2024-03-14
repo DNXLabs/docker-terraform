@@ -1,6 +1,8 @@
-FROM alpine:3.19
+FROM alpine:3.13
 
-ENV TERRAFORM_VERSION=1.7.4
+ENV TERRAFORM_VERSION=1.7.5
+ENV AWSCLI_VERSION=1.19.73
+
 
 VOLUME ["/work"]
 
@@ -24,8 +26,8 @@ RUN apk --no-cache update && \
         jq \
         gettext-dev \
         g++ \
-        make \
-        aws-cli && \
+        make && \
+    pip --no-cache-dir install awscli==$AWSCLI_VERSION && \
     update-ca-certificates && \
     curl -sL https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraform_${TERRAFORM_VERSION}_linux_amd64.zip -o /tmp/terraform_${TERRAFORM_VERSION}_linux_amd64.zip && \
     unzip /tmp/terraform_${TERRAFORM_VERSION}_linux_amd64.zip -d /usr/bin && \
