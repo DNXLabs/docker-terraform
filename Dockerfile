@@ -2,6 +2,7 @@ FROM alpine:3.13
 
 ENV TERRAFORM_VERSION=1.9.4
 ENV AWSCLI_VERSION=1.19.73
+ENV TERRAGRUNT_VERSION=v0.62.2
 
 
 VOLUME ["/work"]
@@ -34,11 +35,8 @@ RUN apk --no-cache update && \
     rm -rf /var/tmp/ && \
     rm -rf /tmp/* && \
     rm -rf /var/cache/apk/* && \
-    wget -qO- https://github.com/gruntwork-io/terragrunt/releases/download/v0.62.2/terragrunt_linux_amd64 -O /usr/local/bin/terragrunt && \
-    chmod +x /usr/local/bin/terragrunt && \
-    wget -qO- https://releases.hashicorp.com/terraform/1.9.3/terraform_1.9.3_linux_amd64.zip -O /tmp/terraform.zip && \
-    unzip /tmp/terraform.zip -d /usr/local/bin && \
-    chmod +x /usr/local/bin/terraform
+    wget -qO- https://github.com/gruntwork-io/terragrunt/releases/download/${TERRAGRUNT_VERSION}/terragrunt_linux_amd64 -O /usr/local/bin/terragrunt && \
+    chmod +x /usr/local/bin/terragrunt
 
 COPY scripts /opt/scripts
 RUN chmod 777 /opt/scripts/*
