@@ -35,7 +35,7 @@ RUN apk --no-cache update && \
     rm -rf /var/tmp/ && \
     rm -rf /tmp/* && \
     rm -rf /var/cache/apk/* && \
-    wget -qO- https://github.com/gruntwork-io/terragrunt/releases/download/${TERRAGRUNT_VERSION}/terragrunt_linux_amd64 -O /usr/local/bin/terragrunt && \
+    wget -q https://github.com/gruntwork-io/terragrunt/releases/download/${TERRAGRUNT_VERSION}/terragrunt_linux_amd64 -O /usr/local/bin/terragrunt && \
     chmod +x /usr/local/bin/terragrunt
 
 COPY scripts /opt/scripts
