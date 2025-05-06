@@ -6,15 +6,18 @@ on:
     # * is a special character in YAML so you have to quote this string
     - cron: "0 0 * * *"
 
+env:
+  PYTHON_VERSION: '3.9.22'
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Set up Python 3.8
-        uses: actions/setup-python@v1
+      - name: Set up Python ${{env.PYTHON_VERSION }}
+        uses: actions/setup-python@v5
         with:
-          python-version: 3.8
+          python-version: ${{env.PYTHON_VERSION }}
       - name: Install dependencies and run job
         run: |
           cd .github/automation
