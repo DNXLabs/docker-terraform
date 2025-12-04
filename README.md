@@ -26,7 +26,7 @@ docker run docker-terraform <command>
 
 ## Author
 
-Managed by [DNX Solutions](https://github.com/DNXLabs).
+Managed by [DNX Solutions](https://dnx.solutions).
 
 ## License
 
