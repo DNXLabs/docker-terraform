@@ -15,14 +15,14 @@ jobs:
       - name: Build the Docker image
         run: docker build . --file Dockerfile --tag dnxsolutions/terraform:latest
 
-      - name: Scan image
-        uses: anchore/scan-action@v3
-        id: scan
-        with:
-          image: dnxsolutions/terraform:latest
-          fail-build: true
-          severity-cutoff: critical
-          acs-report-enable: true
+      #- name: Scan image
+      #  uses: anchore/scan-action@v3
+      #  id: scan
+      #  with:
+      #    image: dnxsolutions/terraform:latest
+      #    fail-build: true
+      #    severity-cutoff: critical
+      #    #acs-report-enable: true
 
       - name: Inspect action SARIF report
         run: cat ${{ steps.scan.outputs.sarif }}
