@@ -1,4 +1,4 @@
-FROM alpine:3.13
+FROM alpine:3.18
 
 ENV TERRAFORM_VERSION=1.16.1
 ENV AWSCLI_VERSION=1.19.73
@@ -20,7 +20,7 @@ RUN apk --no-cache update && \
         curl \
         python3-dev \
         py3-pip \
-        py-setuptools \
+        py3-setuptools \
         groff \
         less \
         jq \
